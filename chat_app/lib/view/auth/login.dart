@@ -58,7 +58,6 @@ class _SignupState extends State<Login> {
                 Padding(
                   padding: const EdgeInsets.only(left: 25, right: 25, top: 15),
                   child: Customtextfield(
-                    
                     hinttext: "Password",
                     validator: (val) {
                       if (password.text.isEmpty) {
@@ -104,12 +103,15 @@ class _SignupState extends State<Login> {
                 SizedBox(
                   height: mq.height * 0.05,
                 ),
-                const Row(
-                  children: [
-                    Expanded(child: Divider()),
-                    Text("Or continue with"),
-                    Expanded(child: Divider())
-                  ],
+                Padding(
+                  padding: const EdgeInsets.only(left: 40, right: 40),
+                  child: const Row(
+                    children: [
+                      Expanded(child: Divider()),
+                      Text("Or continue with"),
+                      Expanded(child: Divider())
+                    ],
+                  ),
                 ),
                 SizedBox(
                   height: mq.height * 0.05,

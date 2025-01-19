@@ -142,9 +142,9 @@ class _ToDoState extends State<ToDo> {
                     return Dismissible(
                       key: ValueKey(docs[index]),
                       secondaryBackground: Card(
-                        color: Colors.red[300],
+                        color: Colors.red[200],
                         child: Padding(
-                          padding: const EdgeInsets.only(right: 10.0),
+                          padding: const EdgeInsets.only(right: 0.0),
                           child: Align(
                               alignment: Alignment.centerRight,
                               child: Lottie.asset(
@@ -153,7 +153,7 @@ class _ToDoState extends State<ToDo> {
                         ),
                       ),
                       background: Card(
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.deepPurpleAccent.shade200,
                         child: Padding(
                           padding: const EdgeInsets.only(left: 20.0),
                           child: Align(

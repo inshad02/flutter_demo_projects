@@ -16,6 +16,7 @@ import 'package:demo/Validation/validation.dart';
 import 'package:demo/Validation/home.dart';
 import 'package:demo/api/homePage.dart';
 import 'package:demo/api2/ui.dart';
+import 'package:demo/api3/view/home.dart';
 import 'package:demo/booking/startPage.dart';
 import 'package:demo/chatApp/chatsPage.dart';
 import 'package:demo/chatApp/homePage.dart';
@@ -63,7 +64,7 @@ class MyApp extends StatelessWidget {
       // home:Monstera(),
       // home: Cart(),
       // home: ChatPage(),
-      home: StartPage(),
+      home: Homeapi3(),
     );
   }
 }

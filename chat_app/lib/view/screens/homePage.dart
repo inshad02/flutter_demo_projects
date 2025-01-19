@@ -24,7 +24,7 @@ class Homepage extends StatelessWidget {
                 onPressed: () {
                   Firebaseauthservices().signOut();
                 },
-                icon: Icon(Icons.exit_to_app))
+                icon: const Icon(Icons.exit_to_app))
           ],
           backgroundColor: Colors.transparent,
           flexibleSpace: Container(
@@ -62,7 +62,7 @@ class Homepage extends StatelessWidget {
 
                     return ListView.builder(
                       reverse: false,
-                      padding: EdgeInsets.all(8),
+                      padding: const EdgeInsets.all(8),
                       shrinkWrap: true,
                       itemCount: docs.length,
                       itemBuilder: (context, index) {
@@ -83,7 +83,7 @@ class Homepage extends StatelessWidget {
                           },
                           child: Card(
                             child: ListTile(
-                              leading: CircleAvatar(),
+                              leading: const CircleAvatar(),
                               title: Text(docs[index]['message'].toString()),
                               titleTextStyle: const TextStyle(
                                   fontSize: 18, color: Colors.black),
@@ -96,7 +96,7 @@ class Homepage extends StatelessWidget {
                   }),
             ),
             Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               child: Row(
                 children: [
                   Expanded(
@@ -123,7 +123,7 @@ class Homepage extends StatelessWidget {
                           decoration: BoxDecoration(
                               color: Colors.grey.shade500,
                               borderRadius: BorderRadius.circular(8)),
-                          child: Icon(Icons.send)))
+                          child: const Icon(Icons.send)))
                 ],
               ),
             ),
@@ -133,10 +133,10 @@ class Homepage extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("You are logged in to "),
+                    const Text("You are logged in to "),
                     Text(
                       "${userr?.email}",
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
